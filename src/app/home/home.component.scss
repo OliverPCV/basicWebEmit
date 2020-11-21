@@ -1,0 +1,26 @@
+.container{
+
+}
+
+.container-start{
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://lh3.googleusercontent.com/proxy/5rdFkSvXWhn8geS8nJyH2hFUSotrtY4MqWCnQowG6eQnIPYTkbTv4Df9RLSZwuS2v0-K-g9GuX6nnpf-J3qnyjhHsrvouPoxTicIxj7eeF_SU66wBDyMbc31g_75QnQLwWcyptX6Ug45ODBZGwEh7pwJ2l0dfKK-q_cUAd3xJkAejyw_Xdf4jNooweniczNoNrff6PDS7PC9PiuTaGdEDj0soHmtKJEL4nDOYw");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container-home-content{
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

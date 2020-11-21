@@ -1,0 +1,30 @@
+.container{
+
+}
+
+.container-start{
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://media.istockphoto.com/videos/cinemagraphosaka-cityscape-video-id833611110?b=1&k=6&m=833611110&s=640x640&h=Z--qgB9gLnK4dzXs3s2cNHvf4dI9JFNnhBcSua3V3po=");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container-about-content{
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.options{
+  color: white;
+}
