@@ -45,7 +45,12 @@ export class SidebarComponent implements OnInit {
     this.block = false;
   }
   toggleOffSidebar() {
-    this.rolled = false;
+    if (this.rolled === true) {
+      this.rolled = false;
+    } else {
+      this.rolled = true;
+    }
+
   }
 
   ngOnInit() {
