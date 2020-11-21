@@ -1,19 +1,19 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 
 @Component({
-  selector: 'app-nav',
-  templateUrl: './nav.component.html',
-  styleUrls: ['./nav.component.scss']
+  selector: 'app-sidebar',
+  templateUrl: './sidebar.component.html',
+  styleUrls: ['./sidebar.component.scss']
 })
-export class NavComponent implements OnInit {
+export class SidebarComponent implements OnInit {
 
-  title = 'basicWeb';
+  constructor() { }
+
+  @Output() clickHamb: EventEmitter<any> = new EventEmitter();
+
   search = '';
   block = false;
   rolled = false;
-
-  @Output() toggleSidebar: EventEmitter<any> = new EventEmitter();
-
 
   options: SearchOption[] = [
     {title: 'Home', path: 'home'},
@@ -21,9 +21,6 @@ export class NavComponent implements OnInit {
     {title: 'Contact', path: 'contact'}
   ];
 
-  public toggleMenu() {
-    this.toggleSidebar.emit();
-  }
   get filteredOptions(): SearchOption[] {
     const filteredOption = [];
     const search = this.search.toLowerCase();
@@ -47,17 +44,15 @@ export class NavComponent implements OnInit {
   toggleOptionsOff() {
     this.block = false;
   }
+  toggleOffSidebar() {
+    this.rolled = false;
+  }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
 }
-
 class SearchOption {
   title: string;
   path: string;
 }
-
-
-
-
